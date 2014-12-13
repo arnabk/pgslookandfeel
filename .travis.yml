@@ -1,0 +1,10 @@
+language: java
+
+notifications:
+    email:
+        - arnab.k@gmail.com
+branches:
+    only:
+        - master
+
+script: mvn clean deploy
