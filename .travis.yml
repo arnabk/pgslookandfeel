@@ -9,9 +9,9 @@ before_install:
   - sudo apt-get install gnupg
   - openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in secring.gpg.enc -out local.secring.gpg -d
   - openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in pubring.gpg.enc -out local.pubring.gpg -d
-  - mkdir ~/.gnugp
-  - cp local.secring.gpg ~/.gnugp/secring.gpg
-  - cp local.pubring.gpg ~/.gnugp/pubring.gpg
+  - mkdir ~/.gnupg
+  - cp local.secring.gpg ~/.gnupg/secring.gpg
+  - cp local.pubring.gpg ~/.gnupg/pubring.gpg
 script: mvn clean deploy --settings maven_settings.xml
 env:
   global:
