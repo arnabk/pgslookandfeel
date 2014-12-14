@@ -6,7 +6,7 @@ branches:
   only:
   - master
 before_install:
-  - sudo apt-get install gnugp
+  - sudo apt-get install gnupg
   - openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in secring.gpg.enc -out local.secring.gpg -d
   - openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in pubring.gpg.enc -out local.pubring.gpg -d
   - mkdir ~/.gnugp
