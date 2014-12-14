@@ -107,10 +107,10 @@
                             <goal>sign</goal>
                         </goals>
                     </execution>
-		    <configuration>
-		      <useAgent>false</useAgent>
-		    </configuration>
                 </executions>
+		<configuration>
+		  <useAgent>false</useAgent>
+		</configuration>
             </plugin>
         </plugins>
     </build>
