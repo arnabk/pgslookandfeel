@@ -3,11 +3,11 @@ This project is a fork from [pago/pgslookandfeel](https://github.com/pago/pgsloo
 ----------
 **Usage**
 ----------
-In order to include this in your project, add this in your project POM file
+In order to include this in your project, add followin in your project POM file
 
-    <dependency>
+```xml
+<dependency>
         <groupId>com.github.arnabk</groupId>
         <artifactId>pgslookandfeel</artifactId>
         <version>1.1.2</version>
-    </dependency>
-
+</dependency>

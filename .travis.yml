@@ -1,10 +1,12 @@
 language: java
-
 notifications:
-    email:
-        - arnab.k@gmail.com
+  email:
+  - arnab.k@gmail.com
 branches:
-    only:
-        - master
-
-script: mvn clean deploy
+  only:
+  - master
+script: mvn clean deploy --settings maven_settings.xml
+env:
+  global:
+  - secure: JFJCen6X8le3eUpJpxSbD9moeOHiYQrsZY98rkFSh4YuNnU0i3fsTge6vceEVRWsXKSKaDtFPWVFgTIUUSORwAu4jMyAd9lmz21gxKfwe9ZvMFn9waQhpLLSXRvgZMD0Lb+bk8i6FThwOpWzN+19+Ads5Lr6wr9B4Xkj2zdN3KI=
+  - secure: OFjVCLRZhPxRZ6R2jxqLi9kc5orOOl5Tp/k72iezkb+RUmzUwmGQfgdnqcXm3pj3HVv5wB80dt4TfNX/k6uVVqdSfeEAywX2EV8yTWga6yN3K7lPNvG44/Xe45uNQOTahwDjS9LV6ACuN+oHEj+CUsZc34H2KQCDAC2/dIV1Itw=

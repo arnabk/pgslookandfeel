@@ -22,12 +22,12 @@
     <developers>
         <developer>
             <name>Patrick Got­thardt</name>
-            <organization>PageSoft</organization>
+            <organization>PageSoft (creator)</organization>
             <organizationUrl>http://www.pagosoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>Arnab Karmakar</name>
-            <organization>Ranartech</organization>
+            <organization>Ranartech (maven distribution)</organization>
             <email>arnab@ranartech.com</email>
             <organizationUrl>http://www.ranartech.com/</organizationUrl>
         </developer>
