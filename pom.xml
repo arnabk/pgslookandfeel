@@ -107,6 +107,9 @@
                             <goal>sign</goal>
                         </goals>
                     </execution>
+		    <configuration>
+		      <useAgent>false</useAgent>
+		    </configuration>
                 </executions>
             </plugin>
         </plugins>
