@@ -6,14 +6,17 @@ branches:
   only:
   - master
 before_install:
-  - sudo apt-get install gnupg
-  - openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in secring.gpg.enc -out local.secring.gpg -d
-  - openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in pubring.gpg.enc -out local.pubring.gpg -d
-  - cp local.secring.gpg ~/.gnupg/secring.gpg
-  - cp local.pubring.gpg ~/.gnupg/pubring.gpg
+- sudo apt-get install gnupg
+- openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in secring.gpg.enc -out local.secring.gpg
+  -d
+- openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in pubring.gpg.enc -out local.pubring.gpg
+  -d
+- cp local.secring.gpg ~/.gnupg/secring.gpg
+- cp local.pubring.gpg ~/.gnupg/pubring.gpg
 script: mvn clean deploy --settings maven_settings.xml
 env:
   global:
   - secure: JFJCen6X8le3eUpJpxSbD9moeOHiYQrsZY98rkFSh4YuNnU0i3fsTge6vceEVRWsXKSKaDtFPWVFgTIUUSORwAu4jMyAd9lmz21gxKfwe9ZvMFn9waQhpLLSXRvgZMD0Lb+bk8i6FThwOpWzN+19+Ads5Lr6wr9B4Xkj2zdN3KI=
   - secure: OFjVCLRZhPxRZ6R2jxqLi9kc5orOOl5Tp/k72iezkb+RUmzUwmGQfgdnqcXm3pj3HVv5wB80dt4TfNX/k6uVVqdSfeEAywX2EV8yTWga6yN3K7lPNvG44/Xe45uNQOTahwDjS9LV6ACuN+oHEj+CUsZc34H2KQCDAC2/dIV1Itw=
   - secure: UA5ruu9yB4d7Jbi1zls5AA/7zF9hAAoHYzGtztoLRP6PZFbBaSBTe6WBUimIkj3+zC0rWOuCHR0qg8NsHLxPdcMaIbi6MENW6hL5zSTL0NS4GkdY3YEqhmIXXhffnO+qTzlcEwtdltgdI5vID2VQ7upjND0JCY5Ie+BTQzFzbC8=
+  - secure: l/LlvcOjgan52DZBpXmERlQrbwx8cXvQlwbUdx62NTp2pYwBQI5ivKyw8U7yDnXAMAR91BK6+L+fmQQ++pdsO6In/emZ1Hs+M+nTtUGC224qNKU+RLwhWOsU4cR/UDmJfJClPeV5IMqkyEY+aAVpQBFbOmCEF9Xxfv9W54wCxUg=
