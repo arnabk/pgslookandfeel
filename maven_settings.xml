@@ -1,9 +1,9 @@
 <settings>
-  <severs>
+  <servers>
     <server>
       <id>ossrh</id>
-      <username>${env.CI_DEPLOY_USERNAME}</username>
-      <password>${env.CI_DEPLOY_PASSWORD}</password>
+      <username>${CI_DEPLOY_USERNAME}</username>
+      <password>${CI_DEPLOY_PASSWORD}</password>
     </server>
-  </severs>
+  </servers>
 </settings>
