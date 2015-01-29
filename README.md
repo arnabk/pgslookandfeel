@@ -11,5 +11,5 @@ In order to include this in your project, add following in your project POM file
 <dependency>
         <groupId>com.github.arnabk</groupId>
         <artifactId>pgslookandfeel</artifactId>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
 </dependency>
